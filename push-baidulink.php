@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: 百度链接推送
-Plugin URI: http://www.wz-gzh.com
+Plugin URI: https://github.com/moai2010/push-baidu-link
 Description: 当有新文章添加时，向百度主动实时的推动新文章连接，有利于百度收录
 Author: moai
 Version: 1.0
@@ -21,7 +21,7 @@ register_deactivation_hook( __FILE__, 'push_baidulink_remove' );
 function push_baidulink_install(){
 	/* 在数据库的 wp_options 表中添加一条记录，第二个参数为默认值 */ 
 	add_option("push_baidulink_url", "http://data.zz.baidu.com/urls?site=XXXXXXXX&token=XXXXXXXX&type=original", '', 'yes'); 
-	add_option("push_baidulink_state", 1, '', 'yes');  
+	add_option("push_baidulink_state", "未知", '', 'yes');  
 }
 /* 注册停用插件进行部分处理*/
 function push_baidulink_remove(){
@@ -58,7 +58,7 @@ class PushBaiduLink{
 		$result = json_decode($result, true);
 		
 		//更新提交状态	
-		update_option('push_baidulink_state', empty($result["success"]) ? 0 : $result["success"] );
+		update_option('push_baidulink_state', empty($result["success"]) ? "失败" : "成功");
 			
 	}
 	
