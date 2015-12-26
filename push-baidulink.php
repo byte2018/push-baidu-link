@@ -87,6 +87,7 @@ class PushBaiduLink{
             2.填写和提交站点信息<br>
             3.进入网页抓取->链接提交<br>
             4.下拉网页获得"接口调用地址"<br>
+			5.更多信息请访问：http://www.wz-gzh.com/index.php/2015/12/26/push-baidu-link/<br>
             提示：有任何疑问请发邮件到zhen.tengjun@qq.com，将第一时间回复，谢谢！
         </p>
 		 <p>
