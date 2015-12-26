@@ -4,3 +4,5 @@
 
 因为暂时还没有提交到WordPress上，所以使用方法如下
 将插件下载解压，放到你WordPress目录下的wp-content/plugins中，然后进入WordPress的插件中心进行安装。
+
+更多详情，请查看http://www.wz-gzh.com/index.php/2015/12/26/push-baidu-link/
